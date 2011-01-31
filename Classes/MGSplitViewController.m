@@ -1063,6 +1063,9 @@
 		cornerRadius = MG_PANESPLITTER_CORNER_RADIUS;
 		_splitWidth = MG_PANESPLITTER_SPLIT_WIDTH;
 		self.allowsDraggingDivider = YES;
+	} else {
+		// Satisfy static analysis
+		cornerRadius = 0.0f;
 	}
 	
 	// Update divider and corners.
